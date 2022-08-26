@@ -123,27 +123,38 @@ header {
             max-width: -webkit-calc(100% - 60px);
             max-width: -moz-calc(100% - 60px);
             max-width: calc(100% - 60px);
-        }
-       .ourTeam_col {
-            padding: 0 30px;
-            .item {
-                overflow: hidden;
-                border-radius: 10px;
-                background-color: rgba(255, 255, 255, 1);
-                .context {
-                    text-align: center;
-                    line-height: 25px;
-                    .headline {
-                        color:#b61984;
-                        font-size: 12px;
-                        font-weight: 400;
+            .row {
+                .ourTeam_col {
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 0 30px;
+                    .item {
+                        overflow: hidden;
+                        border-radius: 10px;
+                        background-color: rgba(255, 255, 255, 1);
+                        .context {
+                            text-align: center;
+                            line-height: 25px;
+                            .headline {
+                                color:#b61984;
+                                font-size: 12px;
+                                font-weight: 400;
+                                margin-bottom: 5px;
+                                margin-top: 20px;
+                            }
+                            .teacher_name {
+                                font-weight: 700;
+                            }
+                            p {
+                                margin-bottom: 40px;
+                            }
+                        }
                     }
-                    .teacher_name {
-                        font-weight: 700;
-                    }
-                }
+               }
             }
-       }
+            
+        }
+      
        
     }
 

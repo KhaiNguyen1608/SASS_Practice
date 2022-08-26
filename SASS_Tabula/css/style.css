@@ -99,23 +99,30 @@ header .header_row .header_menu .header_rightBar .topBarInMenuCell .menu_icon {
   max-width: -moz-calc(100% - 60px);
   max-width: calc(100% - 60px);
 }
-.page_body .ourTeam .ourTeam_col {
+.page_body .ourTeam .outTeam_content .row .ourTeam_col {
+  display: flex;
+  justify-content: flex-start;
   padding: 0 30px;
 }
-.page_body .ourTeam .ourTeam_col .item {
+.page_body .ourTeam .outTeam_content .row .ourTeam_col .item {
   overflow: hidden;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
 }
-.page_body .ourTeam .ourTeam_col .item .context {
+.page_body .ourTeam .outTeam_content .row .ourTeam_col .item .context {
   text-align: center;
   line-height: 25px;
 }
-.page_body .ourTeam .ourTeam_col .item .context .headline {
+.page_body .ourTeam .outTeam_content .row .ourTeam_col .item .context .headline {
   color: #b61984;
   font-size: 12px;
   font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
-.page_body .ourTeam .ourTeam_col .item .context .teacher_name {
+.page_body .ourTeam .outTeam_content .row .ourTeam_col .item .context .teacher_name {
   font-weight: 700;
+}
+.page_body .ourTeam .outTeam_content .row .ourTeam_col .item .context p {
+  margin-bottom: 40px;
 }

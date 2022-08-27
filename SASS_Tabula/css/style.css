@@ -126,3 +126,6 @@ header .header_row .header_menu .header_rightBar .topBarInMenuCell .menu_icon {
 .page_body .ourTeam .outTeam_content .row .ourTeam_col .item .context p {
   margin-bottom: 40px;
 }
+.page_body .contactUs .content {
+  width: 100%;
+}

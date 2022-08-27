@@ -1,4 +1,14 @@
 
+
+@mixin img-setting {
+    img {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+  
+  }
+
 header {
     position: absolute;
     z-index: 1;
@@ -68,11 +78,8 @@ header {
 
 
 .page_body {
-    img {
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    
+    @include img-setting;
     .aboutUs {
         .aboutUs_post {
             // display: flex;
@@ -85,31 +92,17 @@ header {
             top: 100px;
            
             .post_image {
-                img {
-                    width: 100%;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                }
+                @include img-setting;
             }
         }
 
         .cover_image_1 {
-            img {
-                width: 100%;
-                background-repeat: no-repeat;
-                background-size: 100%;
-            }
-
-           
+            @include img-setting;
         }
 
         .cover_image_2 {
                 margin-top: 100px;
-                img {
-                    width: 100%;
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                }
+                @include img-setting;
             }
     }
 
@@ -156,6 +149,17 @@ header {
         }
       
        
+    }
+
+    .contactUs {
+        .content {
+            width: 100%;
+            .row {
+                .col {
+                  
+                }
+            }
+        }
     }
 
 }

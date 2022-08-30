@@ -1,4 +1,8 @@
 
+@mixin padding-left-right {
+    padding: 0 20px;
+}
+
 
 @mixin img-setting {
     img {
@@ -152,11 +156,73 @@ header {
     }
 
     .contactUs {
+
+        input,textarea {
+            border-radius: 50px;
+            width: 100%;
+            background: transparent;
+            line-height: 1;
+            display: block;
+            padding: 1em 1em 1em 0.5em !important;
+            font-size: .8em !important;
+            height: 3.7em;
+        }
+        .btContactButton {
+            max-width: 150px;
+            padding-top: 2em;
+            .btnSubmit {
+                color:#DCD1F3;
+                background: #b61984;
+                height: 4em;
+                border: none;
+               
+            }
+        }
         .content {
             width: 100%;
+           
+          
             .row {
                 .col {
-                  
+                    .conatct_inner{
+                        @include padding-left-right;
+                    }
+
+                    .find_yourC {
+                        @include padding-left-right;
+                        .contactUs_headLine {
+                            font-size: 37.5px;
+                            text-align: center;
+                            font-weight: 800;
+                            
+                        }
+                        .contactUs_fill {
+                            .khai {
+                                .info_form {
+                                    .btContactName {
+                                        flex: 1 0 50%;
+                                        max-width: 50%;
+                                        padding-right: 1em;
+                                        position: relative;
+                                        .your_name {
+                        
+                                        }
+                                    }
+
+                                    textarea {
+                                        padding: 1em 1em 1em 3.5em !important;
+                                        height: 90px !important;
+                                        line-height: 1.5;
+                                        font-size: .8em !important;
+                                    }
+                                }   
+                               
+                            }
+                            
+                        }
+
+                    }
+                 
                 }
             }
         }
